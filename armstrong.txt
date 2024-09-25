@@ -1,0 +1,17 @@
+ let armstrong=(num)=>{
+                let temp=num
+                let res=0
+                while(num>0){
+                    let ld=num%10
+                    res+=(ld*ld*ld)
+                    num=Math.floor(num/10)
+                }
+                return res
+            }
+            let x=armstrong(153);
+            if(x==temp){
+                document.write("Armstrong")
+            }
+            else{
+                document.write("Not armstrong")
+            }
